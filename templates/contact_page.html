@@ -17,13 +17,15 @@
 			<div class="col">
 				<p>Contact Form</p>
 				<div class="col-sm-6 col-12">
-					<form method="POST">
+ 					<form method="POST">
 						{% csrf_token %}
-						<input type="text" placeholder="Name" name="fullname" class="form-control">
+						{{form}}
+						<!-- <input type="text" placeholder="Name" name="fullname" class="form-control">
 						<input type="email" placeholder="Email" name="email" class="form-control">
-						<textarea class="form-control" name="content" id="" cols="30" rows="10"></textarea>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+						<textarea class="form-control" name="content" id="" cols="30" rows="10"></textarea> -->
+						<button type="submit" class="btn btn-primary">Submit</button> 
+					</form> 
+					
 				</div>
 			</div>
 		</div>
